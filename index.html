@@ -10,8 +10,11 @@
   <header>
     <div class="container">
       <h1>My Minecraft Server</h1>
-      <p>Join us and start your adventure!</p>
-      <a href="#info" class="btn">Server Info</a>
+      <p>Join us for adventures, factions, and fun!</p>
+      <div class="header-buttons">
+        <a href="#info" class="btn">Server Info</a>
+        <a href="https://discord.gg/YOURDISCORD" class="btn discord" target="_blank">Join Discord</a>
+      </div>
     </div>
   </header>
 
@@ -21,8 +24,9 @@
       <ul>
         <li><strong>IP:</strong> mc.example.com</li>
         <li><strong>Version:</strong> 1.20</li>
-        <li><strong>Players Online:</strong> 0</li>
+        <li><strong>Players Online:</strong> <span id="player-count">0</span></li>
       </ul>
+      <a href="#" class="btn donate">Donate</a>
     </div>
   </section>
 
@@ -38,10 +42,25 @@
     </div>
   </section>
 
+  <section id="news">
+    <div class="container">
+      <h2>Latest News</h2>
+      <p>Welcome to the server! More news coming soon.</p>
+    </div>
+  </section>
+
   <footer>
     <div class="container">
       <p>&copy; 2025 My Minecraft Server. All Rights Reserved.</p>
     </div>
   </footer>
+
+  <!-- Optional JS for future online player count -->
+  <script>
+    // Placeholder for player count
+    const playerCount = document.getElementById('player-count');
+    // Example: random number until connected to server API
+    playerCount.textContent = Math.floor(Math.random() * 50);
+  </script>
 </body>
 </html>
